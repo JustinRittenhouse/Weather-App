@@ -40,6 +40,7 @@ searchBar.addEventListener( 'submit', ( e ) => {
             description.innerHTML = descriptionList.join(' ')
             humidity.innerHTML = data.main.humidity + "%"
             cityDisplay.innerHTML = data.name + ", " + data.sys.country
+            document.body.style.backgroundImage = `url('static/images/${data.weather[0].icon}.jpg')`
         })
 } )
 
