@@ -19,50 +19,45 @@
             <a class="navbar-brand" href="#">Weather You Like it or Not</a>
         </nav> -->
     </header>
-    <main >
-        <!-- <div id="test2" class="test"></div> -->
-        <!-- <div class="row">
-            <div class="offset-4 col-4">
-                <div class="form-outline"> -->
-                    <div class="city">
-                    <form id="cityform">
-                        <input type="search" id="form1" class="form-control"
-                            placeholder="What city?" aria-label="Search" />
-                        </form>
-                        <div id="city">
-                            <p><b id="cityDisplay"></b></p>
-                        </div>
-                    </div>
-                <!-- </div>
+    <main>
+        <div class="city">
+            <div id="title">
+                <p><b class="citytext" id="title">Weather You Like it or Not</b></p>
             </div>
-        </div> -->
+            <form id="cityform">
+                <input type="search" id="form1" class="form-control" placeholder="What city?" aria-label="Search" />
+            </form>
+            <div id="city">
+                <p><b class="citytext" id="cityDisplay"></b></p>
+            </div>
+        </div>
         <div class="card tempcard" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Current Temperature</b></li>
+                <li class="list-group-item" id="card-title"><b>Current Temperature</b></li>
                 <li id="temp" class="list-group-item">-</li>
             </ul>
         </div>
         <div class="card maxcard" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Today's High</b></li>
+                <li class="list-group-item" id="card-title"><b>Today's High</b></li>
                 <li id="tempMax" class="list-group-item">-</li>
             </ul>
         </div>
         <div class="card mincard" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Today's Low</b></li>
+                <li class="list-group-item" id="card-title"><b>Today's Low</b></li>
                 <li id="tempMin" class="list-group-item">-</li>
             </ul>
         </div>
         <div class="card forecastcard" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Forecast</b></li>
+                <li class="list-group-item" id="card-title"><b>Forecast</b></li>
                 <li id="description" class="list-group-item">-</li>
             </ul>
         </div>
         <div class="card humiditycard" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Humidity</b></li>
+                <li class="list-group-item" id="card-title"><b>Humidity</b></li>
                 <li id="humidity" class="list-group-item">-</li>
             </ul>
         </div>

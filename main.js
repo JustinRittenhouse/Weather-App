@@ -1,12 +1,5 @@
 const apiKey = "d5225ce844a80bf1ffa5ecd14312e902"
-// const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
-// let city = "chicago"
-// fetch ( `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}` )
-//     .then (res => res.json() )
-//     .then (data => {
-//         let p = document.querySelector('#test2')
-//         p.innerHTML = data.main.temp
-//     })
+
 function KtoF (K) {
     let F = ((K - 273.15) * 9/5 + 32).toFixed(1)
     return F
@@ -20,6 +13,7 @@ let tempMin = document.querySelector("#tempMin")
 let description = document.querySelector("#description")
 let humidity = document.querySelector("#humidity")
 let cityDisplay = document.querySelector("#cityDisplay")
+let cardTitle = document.querySelector("#card-title")
 
 searchBar.addEventListener( 'submit', ( e ) => {
     // prevent page refresh
@@ -41,6 +35,10 @@ searchBar.addEventListener( 'submit', ( e ) => {
             humidity.innerHTML = data.main.humidity + "%"
             cityDisplay.innerHTML = data.name + ", " + data.sys.country
             document.body.style.backgroundImage = `url('static/images/${data.weather[0].icon}.jpg')`
+            // if (data.weather[0].icon.charAt(2) === 'd') {
+            //     cardTitle.style.color = "rgb(231, 233, 144)"
+            //     cardTitle.style.background = "rgb(35, 133, 224)"
+            // }
         })
 } )
 

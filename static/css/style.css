@@ -5,14 +5,11 @@ body {
 }
 
 .city {
-position: absolute;
-left: 50vh;
-top:38vh;
-width: 400px;
-transform: translate(50%, 50%);
-}
-
-#city {
+    position: absolute;
+    left: 50vw;
+    top:50vh;
+    width: 400px;
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 400px;
     /* height: 20px; */
@@ -21,8 +18,37 @@ transform: translate(50%, 50%);
     font-size: x-large;
 }
 
-#tempCard {
+.tempcard {
     position: absolute;
-    left: 50vh;
+    left: 50vw;
+    top: 15vh;
+    transform: translate(-50%);
+}
+
+.maxcard {
+    position: absolute;
+    left: 25vw;
     top: 20vh;
+    transform: translate(-50%);
+}
+
+.mincard {
+    position: absolute;
+    left: 75vw;
+    top: 20vh;
+    transform: translate(-50%);
+}
+
+.forecastcard {
+    position: absolute;
+    left: 35vw;
+    top: 68vh;
+    transform: translate(-50%);
+}
+
+.humiditycard {
+    position: absolute;
+    right: 35vw;
+    top: 68vh;
+    transform: translate(50%);
 }
